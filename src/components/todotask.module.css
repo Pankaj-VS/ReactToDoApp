@@ -1,0 +1,56 @@
+.task{
+    color: black;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.taskname{
+    font-weight: bold;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.line{
+    border: 1px solid #f4f4f4;
+}
+
+.deletebutton{
+    padding: 5px 5px;
+    border: none;
+    margin: 4px;
+    border-radius: 10px;
+    background-color: aqua;
+    color:black;
+    cursor:pointer;
+}
+
+.editbutton{
+    padding: 5px 5px;
+    margin: 4px;
+    border: none;
+    border-radius: 10px;
+    background-color: aqua;
+    color:black;
+    cursor:pointer;
+}
+
+.completed{
+    text-decoration: line-through;
+}
+
+.btn{
+    display:flex;
+    flex-direction: column;
+}
+
+.btnLower > button{
+    display: block;
+    width: 100%;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: aqua;
+    color:black;
+    cursor:pointer;
+}
