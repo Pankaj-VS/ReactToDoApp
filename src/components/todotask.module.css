@@ -54,3 +54,9 @@
     color:black;
     cursor:pointer;
 }
+
+.editedTag {
+    color: red; /* Adjust color as needed */
+    font-size: 0.8em; /* Adjust font size as needed */
+    margin-left: 5px; /* Adjust margin as needed */
+}

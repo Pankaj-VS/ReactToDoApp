@@ -15,7 +15,7 @@ export default function Form({ todos, setTodos }) {
       <div className = {styles.inputcontainer}>
         <input
           className={styles.forminput}
-          onChange={(event) => setToDo({name : event.target.value, status : false})}
+          onChange={(event) => setToDo({name : event.target.value, status : false ,isEdited : false})}
           type="text"
           value={toDo.name}
           placeholder="Enter the task"
