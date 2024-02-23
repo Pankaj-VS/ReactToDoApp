@@ -2,13 +2,16 @@ import { useState } from "react";
 import styles from "./form.module.css";
 
 export default function Form({ todos, setTodos }) {
-  //const [toDo, setToDo] = useState("");
   const [toDo, setToDo] = useState({name :"", status : false});
 
   function handleSubmitException(e) {
-    e.preventDefault(); //to prevent default nature.
-    setTodos([...todos, toDo]); //to add every task in a list of tasks.
-    setToDo({name :"", status : false}); //to clear out every task after the task is added.
+    e.preventDefault(); 
+    if (toDo.name.trim() === "") {
+      alert("Cannot enter an empty task!");
+      return; 
+    }
+    setTodos([...todos, toDo]); 
+    setToDo({name :"", status : false}); 
   }
   return (
     <form className={styles.todoform} onSubmit={handleSubmitException}>
